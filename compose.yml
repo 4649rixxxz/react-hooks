@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    volumes:
+      - ./project:/usr/src/project
+    ports:
+      - "3000:3000"
+    tty: true
+    command: /bin/sh
